@@ -60,6 +60,7 @@
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
                 <!--插件使用的相关配置-->
                 <configuration>
                     <!--端口号-->
