@@ -174,27 +174,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <!--使用maven插件启动父工程需要在父工程引入tomcat插件-->
-    <build>
-        <!--插件-->
-        <plugins>
-            <!--tomcat插件-->
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
-                <!--插件使用的相关配置-->
-                <configuration>
-                    <!--端口号-->
-                    <port>18081</port>
-                    <!--写当前项目的名字(虚拟路径),如果写/，那么每次访问项目就不需要加项目名字了-->
-                    <path>/</path>
-                    <!--解决get请求乱码-->
-                    <uriEncoding>UTF-8</uriEncoding>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
     
 </project>
